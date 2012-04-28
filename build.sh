@@ -2,4 +2,4 @@
 
 set -e
 
-ocamlbuild -cflags -w,P aurochs_tool.native $@
+ocamlbuild -cflags -w,P -cflags "-cc clang" aurochs_tool.native $@
